@@ -24,7 +24,7 @@ This is a Telegram bot that allows you to check Schengen visa appointments. The 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/ibidi/schengen-visa-bot.git
+git clone https://github.com/petersawm/schengen-visa-bot.git
 cd schengen-visa-bot
 ```
 
