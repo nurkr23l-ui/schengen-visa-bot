@@ -20,6 +20,7 @@ jobs:
       - name: Kutuphaneleri Yukle
         run: |
           pip install -r requirements.txt
+          pip install pyTelegramBotAPI
 
       - name: Botu Calistir
         env:
