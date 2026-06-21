@@ -2,8 +2,8 @@ name: Schengen Visa Bot
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # Güvenli olması için 20 dakikada bir çalışır
-  workflow_dispatch: # İstediğinde senin de elle başlatmanı sağlar
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
 
 jobs:
   check-slots:
@@ -22,7 +22,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Botu Calistir
-       env:
+        env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           VFS_EMAIL: ${{ secrets.VFS_EMAIL }}
